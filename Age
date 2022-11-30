@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Hello, enter your age!");
+		//created the variable for age
+		int age = Convert.ToInt32(Console.ReadLine());     
+		Console.WriteLine("Your age is: " + age);
+		
+		if(age < 0 || age > 100) //if age is lower than 0 or greater than 100, outputs invalid age
+		{
+		   Console.WriteLine("Invalid Age.");
+		}	
+		else if(age <= 18)
+		{	
+			Console.WriteLine("Sorry you are underage."); //if age is lower than 18, outputs Underage
+		}
+		else if(age >= 18 && age <= 21)
+		{
+			Console.WriteLine("You need parental consent."); //if age is greater or equal to 18 but smaller than 21, outputs "You need parental consent"
+		}	
+		else
+			Console.WriteLine("You're the right age.");
+		{	
+			
+		}
+	}
+}
